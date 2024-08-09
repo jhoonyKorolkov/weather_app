@@ -2,7 +2,7 @@
 const colorMode = useColorMode()
 const isDark = computed({
   get() {
-    return colorMode.value === 'light'
+    return colorMode.value === 'dark'
   },
   set() {
     colorMode.preference = colorMode.value === 'dark' ? 'light' : 'dark'
@@ -11,10 +11,6 @@ const isDark = computed({
 </script>
 <template>
   <ClientOnly>
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit nobis fugit
-    possimus magnam, illum dolorum beatae, cupiditate tempore iste, est
-    exercitationem labore quam illo deleniti sed animi blanditiis veniam
-    aperiam!
     <UButton
       :icon="isDark ? 'i-heroicons-moon-20-solid' : 'i-heroicons-sun-20-solid'"
       color="gray"

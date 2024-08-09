@@ -1,3 +1,3 @@
 <template>
-  <footer>footer its</footer>
+  <footer class="mt-auto">footer its</footer>
 </template>
